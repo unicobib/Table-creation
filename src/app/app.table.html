@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Creation</title>
+</head>
+<body>
+<div class="container">
+    <div class="col-md-8">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Employee ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let emp of Employee;let i=index'>
+                <th>{{i}}</th>
+                <th>{{emp['Employee Id']}}</th>
+                <th>{{emp['First Name']}}</th>
+                <th>{{emp['Last Name']}}</th>
+                <th>{{emp['Designation']}}</th>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+</div>
+    
+</body>
+</html>
